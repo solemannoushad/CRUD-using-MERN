@@ -34,6 +34,11 @@ export default function Navbar() {
                 About
               </Link>
             </li>
+            <li className="nav-item">
+              <Link className={`nav-link ${location.pathname === '/calculator'?"active":""}`} to="/calculator">
+                Calculator
+              </Link>
+            </li>
           </ul>
           <form className="d-flex" role="search">
           <Link className="btn btn-info fw-bold mx-1" to="/login" role="button">Log In</Link>
